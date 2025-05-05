@@ -77,7 +77,7 @@ export default function Home() {
               <div key={index} className="card group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={program.image || "/placeholder.svg"}
+                    src={program.image}
                     alt={program.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -201,7 +201,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">Por Qué Elegirnos</h5>
+              <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">¿Por Qué Elegirnos?</h5>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Proporcionamos La Mejor Experiencia Fitness</h2>
               <p className="text-zinc-400 mb-8">
                 En FitnessElite, estamos comprometidos a ayudarte a alcanzar tus objetivos de fitness con nuestras

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff0000;
+  --primary-dark: #cc0000;
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #111111;
+  --card-foreground: #ffffff;
+  --border: #333333;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent hover:bg-red-600 text-red-600 hover:text-white font-bold py-3 px-6 border border-red-600 rounded-md transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 relative;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-red-600 -mb-3;
+  }
+
+  .card {
+    @apply bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 transition-all duration-300 hover:border-red-600;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-white;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium mb-2 text-white;
+  }
+
+  .form-select {
+    @apply w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-white;
+  }
+
+  .form-checkbox {
+    @apply w-5 h-5 bg-zinc-800 border border-zinc-700 rounded focus:ring-2 focus:ring-red-600 text-red-600;
+  }
+
+  .form-file {
+    @apply block w-full text-sm text-zinc-400
+    file:mr-4 file:py-2 file:px-4
+    file:rounded-md file:border-0
+    file:text-sm file:font-semibold
+    file:bg-red-600 file:text-white
+    hover:file:bg-red-700
+    cursor-pointer;
+  }
+}

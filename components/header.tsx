@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, X, User } from "lucide-react"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,36 +28,36 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-white hover:text-red-500 transition-colors">
               Inicio
             </Link>
-            <Link href="/nosotros" className="text-white hover:text-red-500 transition-colors">
+            <Link href="/about" className="text-white hover:text-red-500 transition-colors">
               Nosotros
             </Link>
-            <Link href="/programas" className="text-white hover:text-red-500 transition-colors">
+            <Link href="/programs" className="text-white hover:text-red-500 transition-colors">
               Programas
             </Link>
-            <Link href="/entrenadores" className="text-white hover:text-red-500 transition-colors">
+            <Link href="/trainers" className="text-white hover:text-red-500 transition-colors">
               Entrenadores
             </Link>
             <Link href="/blog" className="text-white hover:text-red-500 transition-colors">
               Blog
             </Link>
-            <Link href="/contacto" className="text-white hover:text-red-500 transition-colors">
+            <Link href="/contact" className="text-white hover:text-red-500 transition-colors">
               Contacto
             </Link>
 
             {isLoggedIn ? (
-              <Link href="/cuenta" className="text-white hover:text-red-500 transition-colors">
-                <User size={20} />
+              <Link href="/account" className="text-white hover:text-red-500 transition-colors">
+                👤
               </Link>
             ) : (
               <>
-                <Link href="/iniciar-sesion" className="text-white hover:text-red-500 transition-colors">
+                <Link href="/login" className="text-white hover:text-red-500 transition-colors">
                   Iniciar Sesión
                 </Link>
-                <Link href="/unirse" className="btn-primary">
+                <Link href="/join" className="btn-primary">
                   Únete Ahora
                 </Link>
               </>
@@ -75,55 +74,49 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-white" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? "✕" : "☰"}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 flex flex-col space-y-4 pb-4">
-            <Link href="/" className="text-white hover:text-red-500 transition-colors py-2">
-              Inicio
-            </Link>
-            <Link href="/nosotros" className="text-white hover:text-red-500 transition-colors py-2">
-              Nosotros
-            </Link>
-            <Link href="/programas" className="text-white hover:text-red-500 transition-colors py-2">
-              Programas
-            </Link>
-            <Link href="/entrenadores" className="text-white hover:text-red-500 transition-colors py-2">
-              Entrenadores
-            </Link>
-            <Link href="/blog" className="text-white hover:text-red-500 transition-colors py-2">
-              Blog
-            </Link>
-            <Link href="/contacto" className="text-white hover:text-red-500 transition-colors py-2">
-              Contacto
-            </Link>
-
-            {isLoggedIn ? (
-              <Link href="/cuenta" className="text-white hover:text-red-500 transition-colors py-2 flex items-center">
-                <User size={20} className="mr-2" /> Mi Cuenta
+          <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 border-t border-zinc-800 p-4">
+            <nav className="flex flex-col space-y-4">
+              <Link href="/" className="text-white hover:text-red-500 transition-colors">
+                Inicio
               </Link>
-            ) : (
-              <>
-                <Link href="/iniciar-sesion" className="text-white hover:text-red-500 transition-colors py-2">
-                  Iniciar Sesión
+              <Link href="/about" className="text-white hover:text-red-500 transition-colors">
+                Nosotros
+              </Link>
+              <Link href="/programs" className="text-white hover:text-red-500 transition-colors">
+                Programas
+              </Link>
+              <Link href="/trainers" className="text-white hover:text-red-500 transition-colors">
+                Entrenadores
+              </Link>
+              <Link href="/blog" className="text-white hover:text-red-500 transition-colors">
+                Blog
+              </Link>
+              <Link href="/contact" className="text-white hover:text-red-500 transition-colors">
+                Contacto
+              </Link>
+              
+              {isLoggedIn ? (
+                <Link href="/account" className="text-white hover:text-red-500 transition-colors">
+                  Mi Cuenta
                 </Link>
-                <Link href="/unirse" className="btn-primary inline-block text-center">
-                  Únete Ahora
-                </Link>
-              </>
-            )}
-
-            {/* Botón para demostración - en una app real esto no existiría */}
-            <button
-              onClick={toggleLogin}
-              className="text-xs text-zinc-500 hover:text-zinc-400 border border-zinc-800 px-2 py-1 rounded self-start"
-            >
-              {isLoggedIn ? "Simular Cierre" : "Simular Inicio"}
-            </button>
-          </nav>
+              ) : (
+                <>
+                  <Link href="/login" className="text-white hover:text-red-500 transition-colors">
+                    Iniciar Sesión
+                  </Link>
+                  <Link href="/join" className="btn-primary inline-block">
+                    Únete Ahora
+                  </Link>
+                </>
+              )}
+            </nav>
+          </div>
         )}
       </div>
     </header>

@@ -63,7 +63,7 @@ export default function IniciarSesionPage() {
 
                 <p className="text-center text-zinc-400">
                   ¿No tienes una cuenta?{" "}
-                  <Link href="/register" className="text-red-600 hover:underline">
+                  <Link href="/join" className="text-red-600 hover:underline">
                     Regístrate
                   </Link>
                 </p>

@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=1920"
             alt="Sobre Nosotros"
             fill
             className="object-cover opacity-30"
@@ -21,7 +21,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Sobre Nosotros</h1>
             <p className="text-xl text-zinc-300 mb-8">
-              Descubre la historia detrás de FitnessElite y nuestra pasión por ayudar a las personas a alcanzar sus metas fitness.
+              Descubre la historia detrás de ElioFitness y nuestra pasión por ayudar a las personas a alcanzar sus metas fitness.
             </p>
           </div>
         </div>
@@ -31,22 +31,53 @@ export default function AboutPage() {
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[600px] rounded-lg overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800"
+                alt="Historia ElioFitness"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Nuestra Historia</h2>
-              <p className="text-zinc-400 mb-6">
-                Fundado en 2020, FitnessElite nació con una visión clara: revolucionar la forma en que las personas
-                abordan su salud y bienestar. Comenzamos como un pequeño gimnasio local y hemos crecido hasta
-                convertirnos en una de las comunidades fitness más vibrantes de la región.
+              <p className="text-zinc-300 mb-6">
+                Desde nuestros inicios en 2015, ElioFitness ha estado comprometido con la excelencia en el fitness y el bienestar personal.
               </p>
               <p className="text-zinc-400 mb-6">
                 Nuestra filosofía se basa en la creencia de que cada persona merece acceso a entrenamiento de alta
                 calidad y apoyo personalizado para alcanzar sus objetivos de fitness.
               </p>
             </div>
-            <div className="relative h-[500px] rounded-lg overflow-hidden">
+          </div>
+        </div>
+      </section>
+
+      {/* Nuestras Instalaciones */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Nuestras Instalaciones</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative h-80 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=1000&width=800"
-                alt="Nuestra Historia"
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600"
+                alt="Área de Pesas"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=600"
+                alt="Área Cardiovascular"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600"
+                alt="Área de Clases Grupales"
                 fill
                 className="object-cover"
               />
@@ -56,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       {/* Nuestros Valores */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestros Valores</h2>
@@ -109,27 +140,33 @@ export default function AboutPage() {
               {
                 name: "Carlos Ruiz",
                 role: "Director General",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
               },
               {
                 name: "Ana Martínez",
                 role: "Directora de Entrenamiento",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400",
               },
               {
                 name: "Roberto Sánchez",
                 role: "Jefe de Nutrición",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
               },
               {
                 name: "Laura Torres",
                 role: "Coordinadora de Programas",
-                image: "/placeholder.svg?height=400&width=400",
+                image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400",
               },
             ].map((miembro, index) => (
               <div key={index} className="text-center">
                 <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
-                  <Image src={miembro.image} alt={miembro.name} fill className="object-cover" />
+                  <Image 
+                    src={miembro.image} 
+                    alt={miembro.name} 
+                    fill 
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 192px"
+                  />
                 </div>
                 <h3 className="text-xl font-bold mb-1">{miembro.name}</h3>
                 <p className="text-red-600">{miembro.role}</p>

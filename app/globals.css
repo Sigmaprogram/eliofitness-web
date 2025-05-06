@@ -64,4 +64,9 @@ body {
     hover:file:bg-red-700
     cursor-pointer;
   }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
 }

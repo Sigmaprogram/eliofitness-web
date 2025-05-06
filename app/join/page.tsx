@@ -9,8 +9,8 @@ export default function JoinPage() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
-            alt="Join Hero"
+            src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1920"
+            alt="Únete a ElioFitness"
             fill
             className="object-cover opacity-30"
           />
@@ -223,7 +223,12 @@ export default function JoinPage() {
             </div>
 
             <div className="relative h-[600px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=1200&width=800" alt="Registro" fill className="object-cover" />
+              <Image 
+                src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800" 
+                alt="Registro" 
+                fill 
+                className="object-cover" 
+              />
             </div>
           </div>
         </div>
@@ -298,19 +303,19 @@ export default function JoinPage() {
             {[
               {
                 name: "Roberto K.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
                 quote: "Llevo 6 meses como miembro y ya he perdido 15 kilos. ¡Los entrenadores son increíbles y la comunidad muy motivadora!",
                 plan: "Miembro Premium",
               },
               {
                 name: "Jennifer L.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
                 quote: "El programa de entrenamiento personalizado me ha ayudado a alcanzar objetivos fitness que nunca pensé posibles. ¡Altamente recomendado!",
                 plan: "Miembro Elite",
               },
               {
                 name: "David M.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200",
                 quote: "Las instalaciones son de primera clase y los entrenadores realmente saben lo que hacen. He visto resultados increíbles en solo 3 meses.",
                 plan: "Miembro Básico",
               },
@@ -401,6 +406,55 @@ export default function JoinPage() {
           <a href="#registration-form" className="btn-primary bg-white text-red-600 hover:bg-zinc-100">
             Únete Ahora
           </a>
+        </div>
+      </section>
+
+      {/* Beneficios con Imágenes */}
+      <section className="py-20 bg-zinc-950">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative h-80 rounded-lg overflow-hidden group">
+              <Image
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800"
+                alt="Equipamiento de Primera"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+              <div className="absolute bottom-0 p-6">
+                <h3 className="text-xl font-bold mb-2">Equipamiento de Primera</h3>
+                <p className="text-zinc-300">Acceso a equipamiento moderno y de alta calidad</p>
+              </div>
+            </div>
+
+            <div className="relative h-80 rounded-lg overflow-hidden group">
+              <Image
+                src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=800"
+                alt="Entrenadores Expertos"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+              <div className="absolute bottom-0 p-6">
+                <h3 className="text-xl font-bold mb-2">Entrenadores Expertos</h3>
+                <p className="text-zinc-300">Guía profesional personalizada para tus objetivos</p>
+              </div>
+            </div>
+
+            <div className="relative h-80 rounded-lg overflow-hidden group">
+              <Image
+                src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800"
+                alt="Clases Grupales"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+              <div className="absolute bottom-0 p-6">
+                <h3 className="text-xl font-bold mb-2">Clases Grupales</h3>
+                <p className="text-zinc-300">Variedad de clases para todos los niveles</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -96,15 +96,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-2 text-red-600 flex-shrink-0 mt-1" size={18} />
-                <span className="text-zinc-400">Calle Fitness 123, Ciudad Gym, CG 12345</span>
+                <span className="text-zinc-400">Calle ANACAONA 153, Ciudad Santo Domingo Este, CG 12345</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 text-red-600 flex-shrink-0" size={18} />
-                <span className="text-zinc-400">+34 555 123 456</span>
+                <span className="text-zinc-400">+1-809-555-1234</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 text-red-600 flex-shrink-0" size={18} />
-                <span className="text-zinc-400">info@eliofitness.com</span>
+                <span className="text-zinc-400">elio.fitness@gmail.com</span>
               </li>
             </ul>
           </div>

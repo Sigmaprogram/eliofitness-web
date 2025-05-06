@@ -9,8 +9,8 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Fitness Hero Background"
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920"
+            alt="ELIO FITNESS Hero Background"
             fill
             className="object-cover opacity-50"
             priority
@@ -57,19 +57,19 @@ export default function Home() {
             {[
               {
                 title: "Entrenamiento de Fuerza",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800",
                 description:
                   "Desarrolla músculo, aumenta la fuerza y mejora tu físico general con nuestro programa integral de entrenamiento de fuerza.",
               },
               {
                 title: "Fitness Cardiovascular",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=800",
                 description:
                   "Mejora tu salud cardiovascular, quema calorías y aumenta tu resistencia con nuestro programa de fitness cardiovascular.",
               },
               {
                 title: "Entrenamientos HIIT",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=800",
                 description:
                   "Maximiza la quema de calorías y aumenta tu metabolismo con nuestros entrenamientos de alta intensidad por intervalos.",
               },
@@ -262,24 +262,34 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
+                name: "Carlos Ruiz",
+                role: "Entrenador Principal",
+                image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500",
+              },
+              {
+                name: "Ana Martínez",
+                role: "Especialista en Nutrición",
+                image: "https://images.unsplash.com/photo-1609899537878-39f6f593b5d6?w=500",
+              },
+              {
                 name: "Juan Martínez",
                 role: "Entrenador de Fuerza",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500",
               },
               {
                 name: "Sara Rodríguez",
                 role: "Especialista en Cardio",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1609899537931-50b6d8e90771?w=500",
               },
               {
                 name: "Miguel González",
                 role: "Experto en Nutrición",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500",
               },
               {
                 name: "Elena García",
                 role: "Instructora de Yoga",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500",
               },
             ].map((trainer, index) => (
               <div key={index} className="card group">
@@ -323,21 +333,21 @@ export default function Home() {
             {[
               {
                 name: "Roberto K.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200",
                 quote:
                   "He sido miembro durante 6 meses y ya he perdido 15 kilos. ¡Los entrenadores son increíbles y la comunidad es muy solidaria!",
                 rating: 5,
               },
               {
                 name: "Jennifer L.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
                 quote:
                   "El programa de entrenamiento personalizado me ha ayudado a lograr objetivos de fitness que nunca pensé posibles. ¡Altamente recomendado!",
                 rating: 5,
               },
               {
                 name: "David M.",
-                image: "/placeholder.svg?height=200&width=200",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200",
                 quote:
                   "Las instalaciones son de primera clase y los entrenadores realmente saben lo que hacen. He visto resultados increíbles en solo 3 meses.",
                 rating: 4,

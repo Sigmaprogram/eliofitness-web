@@ -8,7 +8,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Fitness Elite - Entrenamiento Fitness Premium",
+  title: "ELIOFITNESS - Entrenamiento Fitness Premium",
   description: "Transforma tu cuerpo con nuestros entrenadores expertos y programas de fitness premium",
     generator: 'v0.dev'
 }

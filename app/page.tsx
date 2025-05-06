@@ -237,7 +237,7 @@ export default function Home() {
 
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=1000&width=800"
+                src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800"
                 alt="Instalaciones Fitness"
                 fill
                 className="object-cover"
@@ -269,7 +269,7 @@ export default function Home() {
               {
                 name: "Ana Martínez",
                 role: "Especialista en Nutrición",
-                image: "https://images.unsplash.com/photo-1609899537878-39f6f593b5d6?w=500",
+                image: "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?w=500",
               },
               {
                 name: "Juan Martínez",
@@ -279,7 +279,7 @@ export default function Home() {
               {
                 name: "Sara Rodríguez",
                 role: "Especialista en Cardio",
-                image: "https://images.unsplash.com/photo-1609899537931-50b6d8e90771?w=500",
+                image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500",
               },
               {
                 name: "Miguel González",
@@ -398,21 +398,21 @@ export default function Home() {
             {[
               {
                 title: "10 Consejos para Desarrollar Músculo Rápidamente",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600",
                 date: "1 de Mayo, 2025",
                 excerpt:
                   "Aprende los secretos para desarrollar músculo eficientemente con estos consejos aprobados por expertos.",
               },
               {
                 title: "La Guía Definitiva para la Pérdida de Grasa",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600",
                 date: "25 de Abril, 2025",
                 excerpt:
                   "Descubre las estrategias más efectivas para la pérdida de grasa sostenible y la transformación corporal.",
               },
               {
                 title: "Mitos de Nutrición Desmentidos",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600",
                 date: "18 de Abril, 2025",
                 excerpt:
                   "Nuestros expertos en nutrición separan la realidad de la ficción sobre las tendencias dietéticas populares y creencias.",

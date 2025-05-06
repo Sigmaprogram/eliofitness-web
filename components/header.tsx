@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold text-white">
-              FITNESS<span className="text-red-600">ELITE</span>
+              ELIO FITNESS
             </span>
           </Link>
 

@@ -19,7 +19,7 @@ export default function JoinPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Únete a FitnessElite</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Únete a ElioFitness</h1>
             <p className="text-xl text-zinc-300 mb-8">
               Da el primer paso hacia una vida más saludable y fuerte. Elige el plan de membresía que se ajuste a tus objetivos y
               comienza tu viaje fitness hoy.
@@ -235,7 +235,7 @@ export default function JoinPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Beneficios de la Membresía</h2>
             <p className="text-zinc-400">
-              Cuando te unes a FitnessElite, no solo obtienes acceso a un gimnasio, te unes a una comunidad dedicada
+              Cuando te unes a ElioFitness, no solo obtienes acceso a un gimnasio, te unes a una comunidad dedicada
               a ayudarte a alcanzar tus objetivos fitness.
             </p>
           </div>
@@ -290,7 +290,7 @@ export default function JoinPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Lo Que Dicen Nuestros Miembros</h2>
             <p className="text-zinc-400">
-              No solo tomes nuestra palabra. Escucha a nuestros miembros que han transformado sus vidas con FitnessElite.
+              No solo tomes nuestra palabra. Escucha a nuestros miembros que han transformado sus vidas con ElioFitness.
             </p>
           </div>
 
@@ -343,7 +343,7 @@ export default function JoinPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Preguntas Frecuentes</h2>
             <p className="text-zinc-400">
-              ¿Tienes preguntas sobre cómo unirte a FitnessElite? Encuentra respuestas a las preguntas más comunes a continuación.
+              ¿Tienes preguntas sobre cómo unirte a ElioFitness? Encuentra respuestas a las preguntas más comunes a continuación.
             </p>
           </div>
 
@@ -395,7 +395,7 @@ export default function JoinPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para Transformar tu Vida?</h2>
           <p className="text-white/90 max-w-3xl mx-auto mb-8">
-            Únete a FitnessElite hoy y da el primer paso hacia un tú más saludable y fuerte. Nuestros entrenadores expertos
+            Únete a ElioFitness hoy y da el primer paso hacia un tú más saludable y fuerte. Nuestros entrenadores expertos
             y comunidad de apoyo están aquí para ayudarte a tener éxito.
           </p>
           <a href="#registration-form" className="btn-primary bg-white text-red-600 hover:bg-zinc-100">

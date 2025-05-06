@@ -19,7 +19,7 @@ export default function BlogPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog de Fitness</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog ElioFitness</h1>
             <p className="text-xl text-zinc-300 mb-8">
               Mantente actualizado con los últimos consejos de fitness, nutrición y casos de éxito.
             </p>

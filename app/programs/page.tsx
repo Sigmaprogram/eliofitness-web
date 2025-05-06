@@ -59,7 +59,7 @@ export default function ProgramsPage() {
               },
               {
                 title: "Yoga y Flexibilidad",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
                 description:
                   "Mejora tu flexibilidad, equilibrio y fuerza mientras reduces el estrés con nuestras clases de yoga.",
                 duration: "Continuo",
@@ -68,7 +68,7 @@ export default function ProgramsPage() {
               },
               {
                 title: "Pérdida de Peso",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800",
                 description:
                   "Programa integral que combina ejercicio y nutrición para ayudarte a alcanzar tus objetivos de pérdida de peso.",
                 duration: "12 semanas",
@@ -77,7 +77,7 @@ export default function ProgramsPage() {
               },
               {
                 title: "Entrenamiento Funcional",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800",
                 description:
                   "Mejora tu fuerza, movilidad y rendimiento en actividades cotidianas con ejercicios funcionales.",
                 duration: "8 semanas",

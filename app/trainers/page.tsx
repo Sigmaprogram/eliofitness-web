@@ -9,7 +9,7 @@ export default function TrainersPage() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1920"
             alt="Nuestros Entrenadores"
             fill
             className="object-cover opacity-30"
@@ -35,7 +35,7 @@ export default function TrainersPage() {
               {
                 name: "Juan Martínez",
                 specialty: "Entrenamiento de Fuerza",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500",
                 experience: "8 años de experiencia",
                 rating: 5,
                 certifications: ["NSCA-CSCS", "ACE-CPT"],
@@ -46,7 +46,7 @@ export default function TrainersPage() {
               {
                 name: "María García",
                 specialty: "Fitness Funcional",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=500",
                 experience: "6 años de experiencia",
                 rating: 5,
                 certifications: ["NASM-CPT", "TRX Trainer"],
@@ -57,7 +57,7 @@ export default function TrainersPage() {
               {
                 name: "Carlos Ruiz",
                 specialty: "HIIT y CrossFit",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500",
                 experience: "10 años de experiencia",
                 rating: 5,
                 certifications: ["CrossFit L3", "ACSM-CPT"],
@@ -68,7 +68,7 @@ export default function TrainersPage() {
               {
                 name: "Ana Torres",
                 specialty: "Yoga y Pilates",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500",
                 experience: "7 años de experiencia",
                 rating: 5,
                 certifications: ["RYT-500", "Pilates Certified"],
@@ -79,7 +79,7 @@ export default function TrainersPage() {
               {
                 name: "Diego Sánchez",
                 specialty: "Nutrición Deportiva",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500",
                 experience: "5 años de experiencia",
                 rating: 5,
                 certifications: ["ISSN-CISSN", "PN-L2"],
@@ -90,7 +90,7 @@ export default function TrainersPage() {
               {
                 name: "Laura Méndez",
                 specialty: "Pérdida de Peso",
-                image: "/placeholder.svg?height=500&width=500",
+                image: "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?w=500",
                 experience: "9 años de experiencia",
                 rating: 5,
                 certifications: ["ACE-CPT", "NASM-WLS"],

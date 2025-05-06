@@ -9,7 +9,7 @@ export default function BlogPage() {
       <section className="relative py-20 md:py-28">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920"
             alt="Blog de Fitness"
             fill
             className="object-cover opacity-30"
@@ -39,7 +39,7 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-80 lg:h-auto overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=800&width=1200"
+                  src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1200"
                   alt="Artículo Destacado"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -88,81 +88,84 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "10 Consejos para Ganar Músculo Rápidamente",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "1 de Mayo, 2024",
-                author: "Juan Pérez",
+                title: "10 Ejercicios Esenciales para Ganar Músculo",
+                image: "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=800",
+                date: "Mayo 15, 2024",
+                author: "Carlos Ruiz",
                 excerpt:
-                  "Aprende los secretos para desarrollar músculo eficientemente con estos consejos aprobados por expertos que se centran en el entrenamiento, nutrición y recuperación.",
+                  "Descubre los ejercicios fundamentales que no pueden faltar en tu rutina de hipertrofia muscular.",
+                category: "Entrenamiento",
               },
               {
-                title: "La Guía Definitiva para la Pérdida de Grasa",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "25 de Abril, 2024",
-                author: "Sara García",
+                title: "Guía Completa de Nutrición Pre y Post Entrenamiento",
+                image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800",
+                date: "Mayo 12, 2024",
+                author: "Ana Martínez",
                 excerpt:
-                  "Descubre las estrategias más efectivas para la pérdida de grasa sostenible y la transformación corporal que van más allá de las dietas restrictivas.",
+                  "Aprende qué comer antes y después de entrenar para maximizar tus resultados.",
+                category: "Nutrición",
               },
               {
-                title: "Mitos de Nutrición Desmentidos",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "18 de Abril, 2024",
-                author: "Miguel Torres",
+                title: "Los Beneficios del Entrenamiento HIIT",
+                image: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=800",
+                date: "Mayo 10, 2024",
+                author: "Sara Rodríguez",
                 excerpt:
-                  "Nuestros expertos en nutrición separan la realidad de la ficción sobre las tendencias dietéticas populares que podrían estar frenando tu progreso.",
+                  "Descubre por qué el HIIT es uno de los métodos más efectivos para quemar grasa.",
+                category: "Cardio",
               },
               {
-                title: "Cómo Diseñar tu Plan de Entrenamiento Perfecto",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "12 de Abril, 2024",
-                author: "Elena Martínez",
+                title: "Yoga para Principiantes: Guía Completa",
+                image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+                date: "Mayo 8, 2024",
+                author: "Elena García",
                 excerpt:
-                  "Aprende los principios de una programación efectiva para crear un plan personalizado que se alinee con tus objetivos específicos.",
+                  "Todo lo que necesitas saber para comenzar tu práctica de yoga.",
+                category: "Yoga",
               },
               {
-                title: "La Importancia de la Recuperación en el Fitness",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "5 de Abril, 2024",
-                author: "David Rodríguez",
+                title: "Mitos y Verdades sobre la Pérdida de Peso",
+                image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800",
+                date: "Mayo 5, 2024",
+                author: "Laura Méndez",
                 excerpt:
-                  "Descubre por qué la recuperación es tan importante como tus entrenamientos y cómo optimizar tus días de descanso.",
+                  "Desmontamos los mitos más comunes sobre la pérdida de peso.",
+                category: "Pérdida de Peso",
               },
               {
-                title: "Entrenamiento de Fuerza para Principiantes",
-                image: "/placeholder.svg?height=400&width=600",
-                date: "28 de Marzo, 2024",
-                author: "Laura Sánchez",
+                title: "Ejercicios Funcionales para la Vida Diaria",
+                image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800",
+                date: "Mayo 3, 2024",
+                author: "Juan Martínez",
                 excerpt:
-                  "Una guía completa para comenzar tu viaje en el entrenamiento de fuerza, incluyendo técnica correcta y errores comunes a evitar.",
+                  "Mejora tu calidad de vida con estos ejercicios funcionales.",
+                category: "Funcional",
               },
-            ].map((article, index) => (
+            ].map((post, index) => (
               <div key={index} className="card group">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={article.image || "/placeholder.svg"}
-                    alt={article.title}
+                    src={post.image}
+                    alt={post.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center text-zinc-500 text-sm mb-3">
-                    <div className="flex items-center mr-4">
-                      <Calendar size={14} className="mr-1" />
-                      <span>{article.date}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <User size={14} className="mr-1" />
-                      <span>{article.author}</span>
-                    </div>
+                  <div className="flex items-center text-sm text-zinc-400 mb-4">
+                    <Calendar size={16} className="mr-2" />
+                    <span className="mr-4">{post.date}</span>
+                    <User size={16} className="mr-2" />
+                    <span>{post.author}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{article.title}</h3>
-                  <p className="text-zinc-400 mb-4">{article.excerpt}</p>
+                  <h3 className="text-xl font-bold mb-3">{post.title}</h3>
+                  <p className="text-zinc-400 mb-4">{post.excerpt}</p>
                   <Link
-                    href={`/blog/post/${article.title.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/blog/${post.title.toLowerCase().replace(/\s+/g, "-")}`}
                     className="flex items-center text-red-600 font-bold hover:text-red-500 transition-colors"
                   >
-                    Read More <ArrowRight size={16} className="ml-2" />
+                    Leer Más <ArrowRight size={16} className="ml-2" />
                   </Link>
                 </div>
               </div>
@@ -213,42 +216,42 @@ export default function BlogPage() {
             {[
               {
                 title: "Entrenamiento de Fuerza",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600",
                 count: 24,
               },
               {
                 title: "Nutrición",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600",
                 count: 18,
               },
               {
                 title: "Pérdida de Peso",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600",
                 count: 15,
               },
               {
                 title: "Cardio",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600",
                 count: 12,
               },
               {
                 title: "Recuperación",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600",
                 count: 9,
               },
               {
                 title: "Suplementación",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=600",
                 count: 8,
               },
               {
                 title: "Casos de Éxito",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600",
                 count: 7,
               },
               {
                 title: "Planes de Entrenamiento",
-                image: "/placeholder.svg?height=400&width=600",
+                image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600",
                 count: 14,
               },
             ].map((category, index) => (
@@ -304,7 +307,12 @@ export default function BlogPage() {
                 </form>
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=600&width=800" alt="Boletín" fill className="object-cover" />
+                <Image 
+                  src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800" 
+                  alt="Boletín" 
+                  fill 
+                  className="object-cover" 
+                />
               </div>
             </div>
           </div>

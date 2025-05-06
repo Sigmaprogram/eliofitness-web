@@ -18,6 +18,22 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
         </div>
 
+        {/* Número de teléfono vertical */}
+        <div className="absolute right-8 top-1/2 -translate-y-1/2 z-20">
+          <div className="flex flex-col items-center">
+            <div className="w-px h-20 bg-red-600 mb-8"></div>
+            <Link 
+              href="/contact" 
+              className="group transition-all duration-300"
+            >
+              <div className="vertical-text transform rotate-180 text-white text-lg tracking-widest group-hover:text-red-500 group-hover:scale-105 transition-all duration-300">
+                +1-809-555-1234
+              </div>
+            </Link>
+            <div className="w-px h-20 bg-red-600 mt-8"></div>
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 z-10 py-20">
           <div className="max-w-2xl">
             <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">Alcanza Tus</h5>
@@ -468,6 +484,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Resto de las secciones... */}
     </div>
   )
 }

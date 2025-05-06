@@ -17,28 +17,6 @@ import {
 export default function DashboardPage() {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/placeholder.svg?height=800&width=1920"
-            alt="Panel de Control"
-            fill
-            className="object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/80"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Mi Cuenta</h1>
-            <p className="text-xl text-zinc-300 mb-8">
-              Gestiona tu membresía, reserva clases y realiza un seguimiento de tu progreso fitness.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Panel Principal */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">

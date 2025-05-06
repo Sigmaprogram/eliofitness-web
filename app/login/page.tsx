@@ -69,6 +69,13 @@ export default function LoginPage() {
                     Regístrate
                   </Link>
                 </p>
+                
+                <p className="text-center text-zinc-400">
+                  Soy administrador{" "}
+                  <Link href="" className="text-red-600 hover:underline">
+                    Iniciar como Administrador
+                  </Link>
+                </p>
               </form>
 
               <div className="relative my-6">

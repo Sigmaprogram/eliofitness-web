@@ -62,14 +62,6 @@ export default function Header() {
                 </Link>
               </>
             )}
-
-            {/* Botón para demostración - en una app real esto no existiría */}
-            <button
-              onClick={toggleLogin}
-              className="text-xs text-zinc-500 hover:text-zinc-400 border border-zinc-800 px-2 py-1 rounded"
-            >
-              {isLoggedIn ? "Simular Cierre" : "Simular Inicio"}
-            </button>
           </nav>
 
           {/* Mobile Menu Button */}

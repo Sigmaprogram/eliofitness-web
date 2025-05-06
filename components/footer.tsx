@@ -57,6 +57,11 @@ export default function Footer() {
                   Contacto
                 </Link>
               </li>
+              <li>
+                <Link href="/cuenta" className="text-zinc-400 hover:text-red-600 transition-colors">
+                  Cuenta
+                </Link>
+              </li>
             </ul>
           </div>
 

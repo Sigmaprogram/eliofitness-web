@@ -14,7 +14,7 @@ import {
   Activity 
 } from "lucide-react"
 
-export default function DashboardPage() {
+const DashboardPage = () => {
   return (
     <div>
       {/* Hero Section */}
@@ -63,13 +63,13 @@ export default function DashboardPage() {
 
                 <nav className="space-y-2">
                   {[
-                    { icon: User, label: "Perfil", href: "/cuenta/perfil" },
-                    { icon: Calendar, label: "Mis Clases", href: "/cuenta/clases" },
-                    { icon: Activity, label: "Mi Progreso", href: "/cuenta/progreso" },
-                    { icon: CreditCard, label: "Facturación", href: "/cuenta/facturacion" },
-                    { icon: FileText, label: "Documentos", href: "/cuenta/documentos" },
-                    { icon: Bell, label: "Notificaciones", href: "/cuenta/notificaciones" },
-                    { icon: Settings, label: "Configuración", href: "/cuenta/configuracion" },
+                    { icon: User, label: "Perfil", href: "/account/profile" },
+                    { icon: Calendar, label: "Mis Clases", href: "/account/classes" },
+                    { icon: Activity, label: "Mi Progreso", href: "/account/progress" },
+                    { icon: CreditCard, label: "Facturación", href: "/account/billing" },
+                    { icon: FileText, label: "Documentos", href: "/account/documents" },
+                    { icon: Bell, label: "Notificaciones", href: "/account/notifications" },
+                    { icon: Settings, label: "Configuración", href: "/account/settings" },
                     { icon: LogOut, label: "Cerrar Sesión", href: "/logout" },
                   ].map((item, index) => (
                     <Link
@@ -173,3 +173,5 @@ export default function DashboardPage() {
     </div>
   )
 }
+
+export default DashboardPage

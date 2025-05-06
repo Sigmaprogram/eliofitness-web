@@ -1,7 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 
-export default function IniciarSesionPage() {
+export default function LoginPage() {
   return (
     <div>
       {/* Hero Section */}
@@ -129,4 +131,4 @@ export default function IniciarSesionPage() {
       </section>
     </div>
   )
-}
+} 

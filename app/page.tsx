@@ -21,9 +21,9 @@ export default function Home() {
         <div className="container mx-auto px-4 z-10 py-20">
           <div className="max-w-2xl">
             <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">Alcanza Tus</h5>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">METAS FITNESS</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">METAS FITNESS</h1>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Con <span className="text-red-600">FitnessElite</span>
+              Con <span className="text-red-600">ElioFitness</span>
             </h2>
             <p className="text-lg text-zinc-300 mb-8">
               Transforma tu cuerpo y mente con nuestros entrenadores expertos y programas de fitness premium. Comienza
@@ -77,7 +77,7 @@ export default function Home() {
               <div key={index} className="card group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={program.image || "/placeholder.svg"}
+                    src={program.image}
                     alt={program.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -201,10 +201,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">Por Qué Elegirnos</h5>
+              <h5 className="text-red-600 font-bold mb-4 uppercase tracking-wider">¿Por Qué Elegirnos?</h5>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Proporcionamos La Mejor Experiencia Fitness</h2>
               <p className="text-zinc-400 mb-8">
-                En FitnessElite, estamos comprometidos a ayudarte a alcanzar tus objetivos de fitness con nuestras
+                En ElioFitness, estamos comprometidos a ayudarte a alcanzar tus objetivos de fitness con nuestras
                 instalaciones de última generación, entrenadores expertos y enfoque personalizado del fitness.
               </p>
 
@@ -315,7 +315,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Lo Que Dicen Nuestros Miembros</h2>
             <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
             <p className="text-zinc-400 max-w-3xl mx-auto">
-              Escucha a nuestros miembros que han transformado sus vidas con FitnessElite.
+              Escucha a nuestros miembros que han transformado sus vidas con ElioFitness.
             </p>
           </div>
 
@@ -445,7 +445,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para Comenzar Tu Viaje Fitness?</h2>
           <p className="text-white/90 max-w-3xl mx-auto mb-8">
-            Únete a FitnessElite hoy y da el primer paso hacia un tú más saludable y fuerte. Nuestros entrenadores
+            Únete a ElioFitness hoy y da el primer paso hacia un tú más saludable y fuerte. Nuestros entrenadores
             expertos y comunidad de apoyo están aquí para ayudarte a tener éxito.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

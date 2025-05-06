@@ -18,7 +18,7 @@ export default function AplicarEntrenadorPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Únete a Nuestro Equipo de Entrenadores</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Únete al Equipo ElioFitness</h1>
             <p className="text-xl text-zinc-300 mb-8">
               ¿Eres un profesional del fitness apasionado que busca marcar la diferencia? Estamos buscando entrenadores
               talentosos para unirse a nuestro equipo.
@@ -193,7 +193,7 @@ export default function AplicarEntrenadorPage() {
 
                     <div>
                       <label htmlFor="motivacion" className="form-label">
-                        ¿Por qué quieres unirte a FitnessElite?
+                        ¿Por qué quieres unirte a ElioFitness?
                       </label>
                       <textarea
                         id="motivacion"
@@ -219,7 +219,7 @@ export default function AplicarEntrenadorPage() {
                       <label className="flex items-center">
                         <input type="checkbox" className="form-checkbox mr-2" />
                         <span className="text-sm">
-                          Acepto que FitnessElite procese mis datos personales de acuerdo con la{" "}
+                          Acepto que ElioFitness procese mis datos personales de acuerdo con la{" "}
                           <Link href="/privacy" className="text-red-600 hover:underline">
                             Política de Privacidad
                           </Link>

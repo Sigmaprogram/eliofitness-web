@@ -10,7 +10,7 @@ export default function BlogPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?height=800&width=1920"
-            alt="Blog Hero"
+            alt="Blog de Fitness"
             fill
             className="object-cover opacity-30"
           />
@@ -19,19 +19,19 @@ export default function BlogPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Fitness Blog</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Blog ElioFitness</h1>
             <p className="text-xl text-zinc-300 mb-8">
-              Stay updated with the latest fitness tips, nutrition advice, and success stories.
+              Mantente actualizado con los últimos consejos de fitness, nutrición y casos de éxito.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Featured Article */}
+      {/* Artículo Destacado */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Article</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Artículo Destacado</h2>
             <div className="w-20 h-1 bg-red-600 mb-6"></div>
           </div>
 
@@ -40,7 +40,7 @@ export default function BlogPage() {
               <div className="relative h-80 lg:h-auto overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=800&width=1200"
-                  alt="Featured Article"
+                  alt="Artículo Destacado"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -49,27 +49,27 @@ export default function BlogPage() {
                 <div className="flex items-center text-zinc-400 mb-4">
                   <div className="flex items-center mr-6">
                     <Calendar size={16} className="mr-2" />
-                    <span>May 5, 2025</span>
+                    <span>5 de Mayo, 2024</span>
                   </div>
                   <div className="flex items-center">
                     <User size={16} className="mr-2" />
-                    <span>By Michael Roberts</span>
+                    <span>Por Miguel Rodríguez</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">The Science of Muscle Growth: Understanding Hypertrophy</h3>
+                <h3 className="text-2xl font-bold mb-4">La Ciencia del Crecimiento Muscular: Entendiendo la Hipertrofia</h3>
                 <p className="text-zinc-400 mb-6">
-                  Muscle hypertrophy, or the growth of muscle cells, is a complex process that involves multiple factors
-                  including mechanical tension, metabolic stress, and muscle damage. In this comprehensive guide, we
-                  break down the science behind muscle growth and provide evidence-based strategies to optimize your
-                  training for maximum results.
+                  La hipertrofia muscular, o el crecimiento de las células musculares, es un proceso complejo que involucra
+                  múltiples factores incluyendo tensión mecánica, estrés metabólico y daño muscular. En esta guía completa,
+                  desglosamos la ciencia detrás del crecimiento muscular y proporcionamos estrategias basadas en evidencia
+                  para optimizar tu entrenamiento y obtener máximos resultados.
                 </p>
                 <p className="text-zinc-400 mb-6">
-                  Whether you're a beginner looking to build your first pound of muscle or an experienced lifter trying
-                  to break through a plateau, understanding these principles will help you design more effective
-                  workouts and achieve your muscle-building goals faster.
+                  Ya seas principiante buscando ganar tu primer kilo de músculo o un levantador experimentado tratando de
+                  superar un estancamiento, entender estos principios te ayudará a diseñar entrenamientos más efectivos y
+                  alcanzar tus objetivos de construcción muscular más rápido.
                 </p>
-                <Link href="/blog/science-of-muscle-growth" className="btn-primary inline-flex items-center">
-                  Read Full Article <ArrowRight size={16} className="ml-2" />
+                <Link href="/blog/ciencia-del-crecimiento-muscular" className="btn-primary inline-flex items-center">
+                  Leer Artículo Completo <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
             </div>
@@ -77,63 +77,63 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Latest Articles */}
+      {/* Últimos Artículos */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Articles</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Últimos Artículos</h2>
             <div className="w-20 h-1 bg-red-600 mb-6"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "10 Tips for Building Muscle Fast",
+                title: "10 Consejos para Ganar Músculo Rápidamente",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "May 1, 2025",
-                author: "John Smith",
+                date: "1 de Mayo, 2024",
+                author: "Juan Pérez",
                 excerpt:
-                  "Learn the secrets to building muscle efficiently with these expert-approved tips that focus on training, nutrition, and recovery.",
+                  "Aprende los secretos para desarrollar músculo eficientemente con estos consejos aprobados por expertos que se centran en el entrenamiento, nutrición y recuperación.",
               },
               {
-                title: "The Ultimate Guide to Fat Loss",
+                title: "La Guía Definitiva para la Pérdida de Grasa",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "April 25, 2025",
-                author: "Sarah Johnson",
+                date: "25 de Abril, 2024",
+                author: "Sara García",
                 excerpt:
-                  "Discover the most effective strategies for sustainable fat loss and body transformation that go beyond crash diets and extreme workouts.",
+                  "Descubre las estrategias más efectivas para la pérdida de grasa sostenible y la transformación corporal que van más allá de las dietas restrictivas.",
               },
               {
-                title: "Nutrition Myths Debunked",
+                title: "Mitos de Nutrición Desmentidos",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "April 18, 2025",
-                author: "Mike Williams",
+                date: "18 de Abril, 2024",
+                author: "Miguel Torres",
                 excerpt:
-                  "Our nutrition experts separate fact from fiction about popular diet trends and beliefs that might be holding back your fitness progress.",
+                  "Nuestros expertos en nutrición separan la realidad de la ficción sobre las tendencias dietéticas populares que podrían estar frenando tu progreso.",
               },
               {
-                title: "How to Design Your Perfect Workout Plan",
+                title: "Cómo Diseñar tu Plan de Entrenamiento Perfecto",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "April 12, 2025",
-                author: "Emily Davis",
+                date: "12 de Abril, 2024",
+                author: "Elena Martínez",
                 excerpt:
-                  "Learn the principles of effective workout programming to create a personalized plan that aligns with your specific goals and preferences.",
+                  "Aprende los principios de una programación efectiva para crear un plan personalizado que se alinee con tus objetivos específicos.",
               },
               {
-                title: "The Importance of Recovery in Fitness",
+                title: "La Importancia de la Recuperación en el Fitness",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "April 5, 2025",
-                author: "David Rodriguez",
+                date: "5 de Abril, 2024",
+                author: "David Rodríguez",
                 excerpt:
-                  "Discover why recovery is just as important as your workouts and how to optimize your rest days for better performance and results.",
+                  "Descubre por qué la recuperación es tan importante como tus entrenamientos y cómo optimizar tus días de descanso.",
               },
               {
-                title: "Strength Training for Beginners",
+                title: "Entrenamiento de Fuerza para Principiantes",
                 image: "/placeholder.svg?height=400&width=600",
-                date: "March 28, 2025",
-                author: "Jennifer Lee",
+                date: "28 de Marzo, 2024",
+                author: "Laura Sánchez",
                 excerpt:
-                  "A comprehensive guide to starting your strength training journey, including proper form, progression strategies, and common mistakes to avoid.",
+                  "Una guía completa para comenzar tu viaje en el entrenamiento de fuerza, incluyendo técnica correcta y errores comunes a evitar.",
               },
             ].map((article, index) => (
               <div key={index} className="card group">
@@ -201,28 +201,28 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Categories */}
+      {/* Categorías */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Categories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Categorías</h2>
             <div className="w-20 h-1 bg-red-600 mb-6"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Strength Training",
+                title: "Entrenamiento de Fuerza",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 24,
               },
               {
-                title: "Nutrition",
+                title: "Nutrición",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 18,
               },
               {
-                title: "Weight Loss",
+                title: "Pérdida de Peso",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 15,
               },
@@ -232,22 +232,22 @@ export default function BlogPage() {
                 count: 12,
               },
               {
-                title: "Recovery",
+                title: "Recuperación",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 9,
               },
               {
-                title: "Supplements",
+                title: "Suplementación",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 8,
               },
               {
-                title: "Success Stories",
+                title: "Casos de Éxito",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 7,
               },
               {
-                title: "Workout Plans",
+                title: "Planes de Entrenamiento",
                 image: "/placeholder.svg?height=400&width=600",
                 count: 14,
               },
@@ -276,35 +276,35 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* Boletín Informativo */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="bg-zinc-900 rounded-lg p-8 md:p-12 border border-zinc-800">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Suscríbete a Nuestro Boletín</h2>
                 <p className="text-zinc-400 mb-6">
-                  Stay updated with the latest fitness tips, nutrition advice, and exclusive content delivered directly
-                  to your inbox.
+                  Mantente actualizado con los últimos consejos de fitness, nutrición y contenido exclusivo
+                  directamente en tu bandeja de entrada.
                 </p>
                 <form className="space-y-4">
                   <div className="flex flex-col sm:flex-row gap-4">
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="Ingresa tu email"
                       className="flex-1 px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
                     />
                     <button type="submit" className="btn-primary whitespace-nowrap">
-                      Subscribe
+                      Suscribirse
                     </button>
                   </div>
                   <p className="text-zinc-500 text-sm">
-                    By subscribing, you agree to our Privacy Policy and consent to receive updates from us.
+                    Al suscribirte, aceptas nuestra Política de Privacidad y das consentimiento para recibir actualizaciones.
                   </p>
                 </form>
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=600&width=800" alt="Newsletter" fill className="object-cover" />
+                <Image src="/placeholder.svg?height=600&width=800" alt="Boletín" fill className="object-cover" />
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              FITNESS<span className="text-red-600">ELITE</span>
+              ElioFitness
             </h3>
             <p className="text-zinc-400 mb-4">
               Transforma tu cuerpo y mente con nuestros entrenadores expertos y programas de fitness premium.
@@ -33,17 +33,17 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/nosotros" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Nuestros Programas
                 </Link>
               </li>
               <li>
-                <Link href="/trainers" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/entrenadores" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Entrenadores
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/contacto" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -64,27 +64,27 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Programas</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/programs/strength-training" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas/entrenamiento-de-fuerza" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Entrenamiento de Fuerza
                 </Link>
               </li>
               <li>
-                <Link href="/programs/cardio-fitness" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas/fitness-cardiovascular" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Fitness Cardiovascular
                 </Link>
               </li>
               <li>
-                <Link href="/programs/hiit-workouts" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas/entrenamientos-hiit" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Entrenamientos HIIT
                 </Link>
               </li>
               <li>
-                <Link href="/programs/nutrition" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas/nutricion" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Planes de Nutrición
                 </Link>
               </li>
               <li>
-                <Link href="/programs/personal-training" className="text-zinc-400 hover:text-red-600 transition-colors">
+                <Link href="/programas/entrenamiento-personal" className="text-zinc-400 hover:text-red-600 transition-colors">
                   Entrenamiento Personal
                 </Link>
               </li>
@@ -104,7 +104,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 text-red-600 flex-shrink-0" size={18} />
-                <span className="text-zinc-400">info@fitnesselite.com</span>
+                <span className="text-zinc-400">info@eliofitness.com</span>
               </li>
             </ul>
           </div>
@@ -113,16 +113,16 @@ export default function Footer() {
         <div className="border-t border-zinc-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-zinc-500 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} FitnessElite. Todos los derechos reservados.
+              © {new Date().getFullYear()} ElioFitness. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6">
-              <Link href="/terms" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
-                Términos de Servicio
+              <Link href="/terminos" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
+                Términos y Condiciones
               </Link>
-              <Link href="/privacy" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
+              <Link href="/privacidad" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
                 Política de Privacidad
               </Link>
-              <Link href="/cookies-policy" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
+              <Link href="/politica-cookies" className="text-zinc-500 hover:text-red-600 text-sm transition-colors">
                 Política de Cookies
               </Link>
             </div>

@@ -19,69 +19,69 @@ export default function JoinPage() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Join FitnessElite</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Únete a ElioFitness</h1>
             <p className="text-xl text-zinc-300 mb-8">
-              Take the first step towards a healthier, stronger you. Choose the membership plan that fits your goals and
-              start your fitness journey today.
+              Da el primer paso hacia una vida más saludable y fuerte. Elige el plan de membresía que se ajuste a tus objetivos y
+              comienza tu viaje fitness hoy.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Membership Plans */}
+      {/* Planes de Membresía */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Choose Your Membership Plan</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Elige tu Plan de Membresía</h2>
             <p className="text-zinc-400">
-              We offer a variety of membership options to fit your fitness goals, schedule, and budget. All plans
-              include access to our state-of-the-art facilities and expert guidance.
+              Ofrecemos una variedad de opciones de membresía para adaptarnos a tus objetivos fitness, horario y presupuesto. Todos los planes
+              incluyen acceso a nuestras instalaciones de última generación y asesoramiento experto.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Basic Plan",
-                price: "$29",
-                period: "monthly",
+                title: "Plan Básico",
+                price: "29,99€",
+                period: "mensual",
                 features: [
-                  "Access to gym facilities",
-                  "Basic fitness assessment",
-                  "2 group classes per week",
-                  "Locker room access",
-                  "Online workout resources",
+                  "Acceso a instalaciones del gimnasio",
+                  "Evaluación física básica",
+                  "2 clases grupales por semana",
+                  "Acceso a vestuarios",
+                  "Recursos de entrenamiento online",
                 ],
                 popular: false,
               },
               {
-                title: "Premium Plan",
-                price: "$59",
-                period: "monthly",
+                title: "Plan Premium",
+                price: "59,99€",
+                period: "mensual",
                 features: [
-                  "Full access to gym facilities",
-                  "Comprehensive fitness assessment",
-                  "Unlimited group classes",
-                  "1 personal training session/month",
-                  "Nutrition consultation",
-                  "Access to premium app features",
-                  "Locker room access with towel service",
+                  "Acceso completo a instalaciones",
+                  "Evaluación física completa",
+                  "Clases grupales ilimitadas",
+                  "1 sesión PT mensual",
+                  "Consulta nutricional",
+                  "Acceso a funciones premium de la app",
+                  "Acceso a vestuarios con servicio de toallas",
                 ],
                 popular: true,
               },
               {
-                title: "Elite Plan",
-                price: "$99",
-                period: "monthly",
+                title: "Plan Elite",
+                price: "99,99€",
+                period: "mensual",
                 features: [
-                  "24/7 access to all facilities",
-                  "Advanced fitness assessment",
-                  "Unlimited group classes",
-                  "4 personal training sessions/month",
-                  "Customized nutrition plan",
-                  "Recovery services access",
-                  "Premium app features",
-                  "VIP locker with amenities",
+                  "Acceso 24/7 a todas las instalaciones",
+                  "Evaluación física avanzada",
+                  "Clases grupales ilimitadas",
+                  "4 sesiones PT mensuales",
+                  "Plan nutricional personalizado",
+                  "Acceso a servicios de recuperación",
+                  "Funciones premium de la app",
+                  "Taquilla VIP con amenidades",
                 ],
                 popular: false,
               },
@@ -112,7 +112,7 @@ export default function JoinPage() {
                       plan.popular ? "btn-primary w-full text-center block" : "btn-secondary w-full text-center block"
                     }
                   >
-                    Choose Plan
+                    Elegir Plan
                   </Link>
                 </div>
               </div>
@@ -121,79 +121,79 @@ export default function JoinPage() {
         </div>
       </section>
 
-      {/* Registration Form */}
+      {/* Formulario de Registro */}
       <section id="registration-form" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Register Now</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Regístrate Ahora</h2>
               <p className="text-zinc-400 mb-8">
-                Fill out the form below to start your membership. Our team will contact you to complete the registration
-                process and schedule your first visit.
+                Completa el formulario para iniciar tu membresía. Nuestro equipo te contactará para completar el proceso
+                de registro y programar tu primera visita.
               </p>
 
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="first-name" className="block text-sm font-medium mb-2">
-                      First Name
+                      Nombre
                     </label>
                     <input
                       type="text"
                       id="first-name"
                       className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="John"
+                      placeholder="Juan"
                     />
                   </div>
                   <div>
                     <label htmlFor="last-name" className="block text-sm font-medium mb-2">
-                      Last Name
+                      Apellidos
                     </label>
                     <input
                       type="text"
                       id="last-name"
                       className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Doe"
+                      placeholder="Pérez"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email Address
+                    Correo Electrónico
                   </label>
                   <input
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="john@example.com"
+                    placeholder="juan@ejemplo.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    Phone Number
+                    Teléfono
                   </label>
                   <input
                     type="tel"
                     id="phone"
                     className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="(555) 123-4567"
+                    placeholder="(+34) 600 123 456"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="membership" className="block text-sm font-medium mb-2">
-                    Membership Plan
+                    Plan de Membresía
                   </label>
                   <select
                     id="membership"
                     className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
                   >
-                    <option value="">Select a plan</option>
-                    <option value="basic">Basic Plan - $29/month</option>
-                    <option value="premium">Premium Plan - $59/month</option>
-                    <option value="elite">Elite Plan - $99/month</option>
+                    <option value="">Selecciona un plan</option>
+                    <option value="basic">Plan Básico - 29,99€/mes</option>
+                    <option value="premium">Plan Premium - 59,99€/mes</option>
+                    <option value="elite">Plan Elite - 99,99€/mes</option>
                   </select>
                 </div>
 
@@ -204,79 +204,75 @@ export default function JoinPage() {
                       className="w-5 h-5 bg-zinc-800 border border-zinc-700 rounded focus:ring-2 focus:ring-red-600 text-red-600"
                     />
                     <span className="ml-2 text-zinc-300 text-sm">
-                      I agree to the{" "}
+                      Acepto los{" "}
                       <Link href="/terms" className="text-red-600 hover:underline">
-                        Terms of Service
+                        Términos de Servicio
                       </Link>{" "}
-                      and{" "}
+                      y la{" "}
                       <Link href="/privacy" className="text-red-600 hover:underline">
-                        Privacy Policy
+                        Política de Privacidad
                       </Link>
                     </span>
                   </label>
                 </div>
 
                 <button type="submit" className="btn-primary">
-                  Submit Registration
+                  Enviar Registro
                 </button>
               </form>
             </div>
 
             <div className="relative h-[600px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=1200&width=800" alt="Registration" fill className="object-cover" />
+              <Image src="/placeholder.svg?height=1200&width=800" alt="Registro" fill className="object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Membership Benefits */}
+      {/* Beneficios de Membresía */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Membership Benefits</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Beneficios de la Membresía</h2>
             <p className="text-zinc-400">
-              When you join FitnessElite, you're not just getting access to a gym—you're joining a community dedicated
-              to helping you achieve your fitness goals.
+              Cuando te unes a ElioFitness, no solo obtienes acceso a un gimnasio, te unes a una comunidad dedicada
+              a ayudarte a alcanzar tus objetivos fitness.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "State-of-the-Art Facilities",
-                description: "Access to premium equipment, spacious workout areas, and clean, modern amenities.",
+                title: "Instalaciones de Última Generación",
+                description: "Acceso a equipamiento premium, amplias áreas de entrenamiento e instalaciones modernas y limpias.",
               },
               {
-                title: "Expert Guidance",
-                description:
-                  "Work with certified trainers who are dedicated to helping you achieve your fitness goals.",
+                title: "Asesoramiento Experto",
+                description: "Trabaja con entrenadores certificados dedicados a ayudarte a alcanzar tus objetivos fitness.",
               },
               {
-                title: "Diverse Class Offerings",
-                description:
-                  "Choose from a wide variety of group fitness classes to keep your workouts fresh and engaging.",
+                title: "Variedad de Clases",
+                description: "Elige entre una amplia variedad de clases grupales para mantener tus entrenamientos frescos y motivadores.",
               },
               {
-                title: "Supportive Community",
-                description:
-                  "Join a community of like-minded individuals who will motivate and inspire you on your fitness journey.",
+                title: "Comunidad de Apoyo",
+                description: "Únete a una comunidad de personas con objetivos similares que te motivarán e inspirarán en tu viaje fitness.",
               },
               {
-                title: "Flexible Hours",
-                description:
-                  "With extended hours and 24/7 access for Elite members, you can work out on your schedule.",
+                title: "Horarios Flexibles",
+                description: "Con horarios extendidos y acceso 24/7 para miembros Elite, puedes entrenar según tu agenda.",
               },
               {
-                title: "Digital Resources",
-                description: "Access workout plans, nutrition guides, and progress tracking through our mobile app.",
+                title: "Recursos Digitales",
+                description: "Accede a planes de entrenamiento, guías nutricionales y seguimiento de progreso a través de nuestra app móvil.",
               },
               {
-                title: "Recovery Services",
-                description: "Take advantage of our recovery amenities to help your body repair and grow stronger.",
+                title: "Servicios de Recuperación",
+                description: "Aprovecha nuestras instalaciones de recuperación para ayudar a tu cuerpo a repararse y fortalecerse.",
               },
               {
-                title: "Special Events",
-                description: "Participate in member-exclusive events, challenges, and workshops throughout the year.",
+                title: "Eventos Especiales",
+                description: "Participa en eventos exclusivos para miembros, desafíos y talleres durante todo el año.",
               },
             ].map((benefit, index) => (
               <div key={index} className="bg-zinc-900 p-6 rounded-lg border border-zinc-800">
@@ -288,38 +284,35 @@ export default function JoinPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonios */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">What Our Members Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Lo Que Dicen Nuestros Miembros</h2>
             <p className="text-zinc-400">
-              Don't just take our word for it. Hear from our members who have transformed their lives with FitnessElite.
+              No solo tomes nuestra palabra. Escucha a nuestros miembros que han transformado sus vidas con ElioFitness.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Robert K.",
+                name: "Roberto K.",
                 image: "/placeholder.svg?height=200&width=200",
-                quote:
-                  "I've been a member for 6 months and have already lost 30 pounds. The trainers are amazing and the community is so supportive!",
-                plan: "Premium Member",
+                quote: "Llevo 6 meses como miembro y ya he perdido 15 kilos. ¡Los entrenadores son increíbles y la comunidad muy motivadora!",
+                plan: "Miembro Premium",
               },
               {
                 name: "Jennifer L.",
                 image: "/placeholder.svg?height=200&width=200",
-                quote:
-                  "The personalized training program has helped me achieve fitness goals I never thought possible. Highly recommend!",
-                plan: "Elite Member",
+                quote: "El programa de entrenamiento personalizado me ha ayudado a alcanzar objetivos fitness que nunca pensé posibles. ¡Altamente recomendado!",
+                plan: "Miembro Elite",
               },
               {
                 name: "David M.",
                 image: "/placeholder.svg?height=200&width=200",
-                quote:
-                  "The facilities are top-notch and the trainers really know their stuff. I've seen incredible results in just 3 months.",
-                plan: "Basic Member",
+                quote: "Las instalaciones son de primera clase y los entrenadores realmente saben lo que hacen. He visto resultados increíbles en solo 3 meses.",
+                plan: "Miembro Básico",
               },
             ].map((testimonial, index) => (
               <div key={index} className="card p-6">
@@ -344,47 +337,41 @@ export default function JoinPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Preguntas Frecuentes */}
       <section className="py-20 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Preguntas Frecuentes</h2>
             <p className="text-zinc-400">
-              Have questions about joining FitnessElite? Find answers to our most commonly asked questions below.
+              ¿Tienes preguntas sobre cómo unirte a ElioFitness? Encuentra respuestas a las preguntas más comunes a continuación.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                question: "Is there a joining fee?",
-                answer:
-                  "Yes, there is a one-time joining fee of $49 for all membership plans. However, we frequently run promotions that waive this fee, so be sure to ask about current offers.",
+                question: "¿Hay una cuota de inscripción?",
+                answer: "Sí, hay una cuota única de inscripción de 49€ para todos los planes. Sin embargo, frecuentemente tenemos promociones que la bonifican, consulta las ofertas actuales.",
               },
               {
-                question: "Can I cancel my membership at any time?",
-                answer:
-                  "Yes, you can cancel your membership at any time. However, please note that some membership plans may have a minimum commitment period or cancellation fees.",
+                question: "¿Puedo cancelar mi membresía en cualquier momento?",
+                answer: "Sí, puedes cancelar tu membresía en cualquier momento. Sin embargo, ten en cuenta que algunos planes pueden tener un período mínimo de compromiso o tarifas de cancelación.",
               },
               {
-                question: "Do you offer family memberships?",
-                answer:
-                  "Yes, we offer family membership packages that provide discounted rates for household members. Please contact our membership team for details.",
+                question: "¿Ofrecen membresías familiares?",
+                answer: "Sí, ofrecemos paquetes de membresía familiar que proporcionan tarifas con descuento para miembros del hogar. Por favor, contacta con nuestro equipo de membresías para más detalles.",
               },
               {
-                question: "Is there a minimum age requirement?",
-                answer:
-                  "Members must be at least 16 years old. Members aged 16-17 must have a parent or guardian sign their membership agreement.",
+                question: "¿Hay un requisito de edad mínima?",
+                answer: "Los miembros deben tener al menos 16 años. Los miembros de 16-17 años deben tener un padre o tutor que firme su acuerdo de membresía.",
               },
               {
-                question: "Can I freeze my membership?",
-                answer:
-                  "Yes, you can freeze your membership for up to 3 months per year for medical reasons or extended travel. A small monthly maintenance fee may apply.",
+                question: "¿Puedo congelar mi membresía?",
+                answer: "Sí, puedes congelar tu membresía hasta 3 meses al año por razones médicas o viajes prolongados. Puede aplicarse una pequeña cuota mensual de mantenimiento.",
               },
               {
-                question: "Do you offer corporate memberships?",
-                answer:
-                  "Yes, we offer special corporate rates for businesses. Contact our corporate wellness team for more information on setting up a corporate account.",
+                question: "¿Ofrecen membresías corporativas?",
+                answer: "Sí, ofrecemos tarifas especiales para empresas. Contacta con nuestro equipo de bienestar corporativo para más información sobre cómo establecer una cuenta corporativa.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-zinc-900 p-6 rounded-lg border border-zinc-800">
@@ -395,24 +382,24 @@ export default function JoinPage() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-zinc-400 mb-4">Still have questions? We're here to help.</p>
+            <p className="text-zinc-400 mb-4">¿Aún tienes preguntas? Estamos aquí para ayudarte.</p>
             <Link href="/contact" className="btn-secondary">
-              Contact Us
+              Contáctanos
             </Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Sección CTA */}
       <section className="py-20 bg-red-600">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Life?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para Transformar tu Vida?</h2>
           <p className="text-white/90 max-w-3xl mx-auto mb-8">
-            Join FitnessElite today and take the first step towards a healthier, stronger you. Our expert trainers and
-            supportive community are here to help you succeed.
+            Únete a ElioFitness hoy y da el primer paso hacia un tú más saludable y fuerte. Nuestros entrenadores expertos
+            y comunidad de apoyo están aquí para ayudarte a tener éxito.
           </p>
           <a href="#registration-form" className="btn-primary bg-white text-red-600 hover:bg-zinc-100">
-            Join Now
+            Únete Ahora
           </a>
         </div>
       </section>
